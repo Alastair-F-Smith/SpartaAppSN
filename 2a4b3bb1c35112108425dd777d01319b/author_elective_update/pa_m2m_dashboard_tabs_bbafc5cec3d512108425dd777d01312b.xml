@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_m2m_dashboard_tabs">
+    <pa_m2m_dashboard_tabs action="DELETE">
+        <dashboard display_value="Sparta Course Analytics">b18f05cec3d512108425dd777d01310d</dashboard>
+        <home>false</home>
+        <homepage/>
+        <order>1</order>
+        <sys_class_name>pa_m2m_dashboard_tabs</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-18 14:53:18</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>bbafc5cec3d512108425dd777d01312b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>b18f05cec3d512108425dd777d01310d</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Sparta Academy" source="x_1535645_sparta_a">2a4b3bb1c35112108425dd777d01319b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Sparta Academy">2a4b3bb1c35112108425dd777d01319b</sys_scope>
+        <sys_update_name>pa_m2m_dashboard_tabs_bbafc5cec3d512108425dd777d01312b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-18 14:53:18</sys_updated_on>
+        <tab display_value="New Tab 1">73afc5cec3d512108425dd777d013116</tab>
+    </pa_m2m_dashboard_tabs>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Sparta Academy">2a4b3bb1c35112108425dd777d01319b</application>
+        <file_path/>
+        <instance_id>3eaac1b1db6e7d1c02d91729139619e4</instance_id>
+        <instance_name>dev214395</instance_name>
+        <name>pa_m2m_dashboard_tabs_bbafc5cec3d512108425dd777d01312b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_m2m_dashboard_tabs"><pa_m2m_dashboard_tabs action="INSERT_OR_UPDATE"><dashboard display_value="Sparta Course Analytics">b18f05cec3d512108425dd777d01310d</dashboard><home>false</home><homepage/><order>1</order><sys_class_name>pa_m2m_dashboard_tabs</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-10-18 14:53:18</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>bbafc5cec3d512108425dd777d01312b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>b18f05cec3d512108425dd777d01310d</sys_name><sys_overrides/><sys_package display_value="Sparta Academy" source="x_1535645_sparta_a">2a4b3bb1c35112108425dd777d01319b</sys_package><sys_policy/><sys_scope display_value="Sparta Academy">2a4b3bb1c35112108425dd777d01319b</sys_scope><sys_update_name>pa_m2m_dashboard_tabs_bbafc5cec3d512108425dd777d01312b</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-10-18 14:53:18</sys_updated_on><tab display_value="New Tab 1">73afc5cec3d512108425dd777d013116</tab></pa_m2m_dashboard_tabs></record_update>]]></payload>
+        <payload_hash>-1631018686</payload_hash>
+        <record_name>b18f05cec3d512108425dd777d01310d</record_name>
+        <reverted_from/>
+        <source>3a8fb3f5c35112108425dd777d013107</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-18 14:53:19</sys_created_on>
+        <sys_id>fbafc5cec3d512108425dd777d01312e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>192a01e64110000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-18 14:53:19</sys_updated_on>
+        <type>Dashboard Tab</type>
+        <update_guid>ffafc5ce41d512101d43fddc5971412d</update_guid>
+        <update_guid_history>ffafc5ce41d512101d43fddc5971412d:-1631018686</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Sparta Course Analytics">3db0dd02c31912108425dd777d013149</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-18 14:57:49</sys_created_on>
+        <sys_db_object display_value="" name="pa_m2m_dashboard_tabs">pa_m2m_dashboard_tabs</sys_db_object>
+        <sys_id>295f33d7d4c749f6a82994c0fa6a30c4</sys_id>
+        <sys_metadata>bbafc5cec3d512108425dd777d01312b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>b18f05cec3d512108425dd777d01310d</sys_name>
+        <sys_package display_value="Sparta Academy" source="x_1535645_sparta_a">2a4b3bb1c35112108425dd777d01319b</sys_package>
+        <sys_parent display_value="">b18f05cec3d512108425dd777d01310d</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Sparta Academy">2a4b3bb1c35112108425dd777d01319b</sys_scope>
+        <sys_scope_delete display_value="">275a16dbec634c748a54c25f67520909</sys_scope_delete>
+        <sys_update_name>pa_m2m_dashboard_tabs_bbafc5cec3d512108425dd777d01312b</sys_update_name>
+        <sys_update_version display_value="pa_m2m_dashboard_tabs_bbafc5cec3d512108425dd777d01312b">fbafc5cec3d512108425dd777d01312e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-18 14:57:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
