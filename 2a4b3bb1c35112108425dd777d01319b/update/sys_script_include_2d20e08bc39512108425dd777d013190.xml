@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1535645_sparta_a.CheckStudentCourse</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description>Check if a student course combination exists</description>
+        <name>CheckStudentCourse</name>
+        <script><![CDATA[var CheckStudentCourse = Class.create();
+CheckStudentCourse.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    studentCourseExists: function() {
+
+        try {
+            const courseId = this.getParameter("sysparm_course_id");
+            const studentId = this.getParameter("sysparm_student_id");
+
+            const matches = new global.GlideQuery("x_1535645_sparta_a_m2m_x_1535645_sp_x_1535645_sp")
+                .where("x_1535645_sparta_a_student", studentId)
+                .where("x_1535645_sparta_a_courses", courseId)
+                .count();
+            return matches > 0;
+        } catch (err) {
+            gs.error("Error in studentCourseExists: " + err);
+        }
+    },
+
+    type: 'CheckStudentCourse'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-21 14:11:07</sys_created_on>
+        <sys_id>2d20e08bc39512108425dd777d013190</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CheckStudentCourse</sys_name>
+        <sys_package display_value="Sparta Academy" source="x_1535645_sparta_a">2a4b3bb1c35112108425dd777d01319b</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Sparta Academy">2a4b3bb1c35112108425dd777d01319b</sys_scope>
+        <sys_update_name>sys_script_include_2d20e08bc39512108425dd777d013190</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-21 14:11:07</sys_updated_on>
+    </sys_script_include>
+</record_update>

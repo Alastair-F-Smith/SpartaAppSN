@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas_pane">
     <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
         <grid_canvas display_value="New Tab 1">62ef0dcec3d512108425dd777d01319d</grid_canvas>
-        <height>10</height>
+        <height>14</height>
         <portal_widget display_value="Created 2024-10-21 01:47:12">0aa89b7ec31112108425dd777d01318f</portal_widget>
-        <posx>0</posx>
-        <posy>10</posy>
+        <posx>4</posx>
+        <posy>0</posy>
         <sys_class_name>sys_grid_canvas_pane</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-10-21 08:47:12</sys_created_on>
         <sys_id>1aa8d7fec31112108425dd777d013129</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>62ef0dcec3d512108425dd777d01319d</sys_name>
         <sys_package display_value="Sparta Academy" source="x_1535645_sparta_a">2a4b3bb1c35112108425dd777d01319b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Sparta Academy">2a4b3bb1c35112108425dd777d01319b</sys_scope>
         <sys_update_name>sys_grid_canvas_pane_1aa8d7fec31112108425dd777d013129</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-10-21 08:47:34</sys_updated_on>
-        <width>12</width>
+        <sys_updated_on>2024-10-21 14:49:58</sys_updated_on>
+        <width>4</width>
     </sys_grid_canvas_pane>
 </record_update>
