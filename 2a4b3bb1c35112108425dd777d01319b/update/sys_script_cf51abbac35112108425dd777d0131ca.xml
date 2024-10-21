@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>true</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_1535645_sparta_a_m2m_x_1535645_sp_x_1535645_sp</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Check If Full</name>
+        <order>200</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+	gs.info("Checking course size...");
+    try {
+        var MAX_COURSE_SIZE = 2;
+		var courseId = current.x_1535645_sparta_a_courses;
+
+        var studentsEnrolled = new global.GlideQuery("x_1535645_sparta_a_m2m_x_1535645_sp_x_1535645_sp")
+			.where("x_1535645_sparta_a_courses", courseId)
+            .count();
+
+        gs.info("There are " + studentsEnrolled + " students enrolled in course " + courseId.getDisplayValue());
+
+        var isFull = studentsEnrolled >= MAX_COURSE_SIZE;
+
+		gs.info("Setting the 'Is Full' flag to " + isFull + "...");
+
+        new global.GlideQuery("x_1535645_sparta_a_courses")
+            .where("sys_id", courseId)
+            .update({is_full: isFull});
+    } catch (err) {
+        gs.error("Error occurred in Check if Full: " + err);
+    }
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-21 09:40:47</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>cf51abbac35112108425dd777d0131ca</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>Check If Full</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Sparta Academy" source="x_1535645_sparta_a">2a4b3bb1c35112108425dd777d01319b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Sparta Academy">2a4b3bb1c35112108425dd777d01319b</sys_scope>
+        <sys_update_name>sys_script_cf51abbac35112108425dd777d0131ca</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-21 10:18:40</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=cf51abbac35112108425dd777d0131ca"/>
+</record_update>
