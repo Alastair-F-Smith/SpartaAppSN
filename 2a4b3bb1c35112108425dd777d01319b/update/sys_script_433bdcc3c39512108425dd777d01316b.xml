@@ -11,14 +11,14 @@
         <advanced>true</advanced>
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
-        <collection>x_1535645_sparta_a_courses</collection>
+        <collection>x_1535645_sparta_a_m2m_x_1535645_sp_x_1535645_sp</collection>
         <condition/>
         <description/>
         <execute_function>false</execute_function>
         <filter_condition/>
         <is_rest>false</is_rest>
         <message/>
-        <name>Update Course Status</name>
+        <name>Ensure Unique Student Course</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -29,45 +29,37 @@
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 
-	var now = new GlideDateTime();
-	var courseStart = new GlideDateTime(current.start_date);
-	var courseEnd = new GlideDateTime(current.end_date);
+	gs.info("Checking for existing course enrolments for this student: " + current.x_1535645_sparta_a_student.getDisplayValue());
+	const matches = new global.GlideQuery("x_1535645_sparta_a_m2m_x_1535645_sp_x_1535645_sp")
+	.where("x_1535645_sparta_a_courses", current.x_1535645_sparta_a_courses)
+	.where("x_1535645_sparta_a_student", current.x_1535645_sparta_a_student)
+	.count();
 
-	if (now.before(courseStart)) {
-		current.status = "tentative";
-	} else if (now.before(courseEnd)) {
-		current.status = "in_progress";
-	} else {
-		current.status = "complete";
+	gs.info("Found " + matches + " matching student - course records");
+
+	if (matches > 0) {
+		gs.addErrorMessage("Duplicate student - course combination. Students can only be added once to each course.");
+		current.setAbortAction(true);
 	}
-
-	// This is apparently not good practice in a business rule but I'm
-	// not sure how else to implement this functionality.
-	// The `setWorkflow` method calls disables execution of other business
-	// rules while current.update is used. This helps prevent recursive
-	// loops of business rule execution.
-	current.setWorkflow(false);
-	current.update();
-	current.setWorkflow(false);
 
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-10-18 13:33:02</sys_created_on>
+        <sys_created_on>2024-10-21 13:46:39</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>908a3c06c39512108425dd777d013197</sys_id>
-        <sys_mod_count>8</sys_mod_count>
-        <sys_name>Update Course Status</sys_name>
+        <sys_id>433bdcc3c39512108425dd777d01316b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Ensure Unique Student Course</sys_name>
         <sys_overrides/>
         <sys_package display_value="Sparta Academy" source="x_1535645_sparta_a">2a4b3bb1c35112108425dd777d01319b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Sparta Academy">2a4b3bb1c35112108425dd777d01319b</sys_scope>
-        <sys_update_name>sys_script_908a3c06c39512108425dd777d013197</sys_update_name>
+        <sys_update_name>sys_script_433bdcc3c39512108425dd777d01316b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-10-21 13:09:07</sys_updated_on>
+        <sys_updated_on>2024-10-21 13:50:03</sys_updated_on>
         <template/>
-        <when>before_display</when>
+        <when>before</when>
     </sys_script>
-    <sys_translated_text action="delete_multiple" query="documentkey=908a3c06c39512108425dd777d013197"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=433bdcc3c39512108425dd777d01316b"/>
 </record_update>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="c12d6882c35512108425dd777d0131e8" label="Student" max_length="40" name="x_1535645_sparta_a_student" type="collection">
-        <element display="true" label="Student" mandatory="true" max_length="32" name="student" reference="sys_user" type="reference"/>
+        <element display="true" label="Student" mandatory="true" max_length="32" name="student" reference="sys_user" type="reference" unique="true"/>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
-        <index name="index">
+        <index name="index" unique="true">
             <element name="student"/>
         </index>
     </element>

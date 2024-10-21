@@ -1,74 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_section caption="" section_id="1fd134c6c35512108425dd777d01314a" sys_domain="global" table="x_1535645_sparta_a_student" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.begin_split</element>
+            <element>number</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-10-18 12:43:02</sys_created_on>
-            <sys_id>9bd1f80ac35512108425dd777d013140</sys_id>
+            <sys_created_on>2024-10-21 13:26:20</sys_created_on>
+            <sys_id>43889403c39512108425dd777d0131fe</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1535645_sparta_a_student" sys_domain="global" view="Default view">1fd134c6c35512108425dd777d01314a</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-10-18 12:43:02</sys_updated_on>
+            <sys_updated_on>2024-10-21 13:26:20</sys_updated_on>
             <sys_user/>
-            <type>.begin_split</type>
+            <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>number</element>
+            <element>student.first_name</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-10-18 12:43:02</sys_created_on>
-            <sys_id>57d1f80ac35512108425dd777d013141</sys_id>
+            <sys_created_on>2024-10-21 13:26:20</sys_created_on>
+            <sys_id>c7889403c39512108425dd777d0131fe</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1535645_sparta_a_student" sys_domain="global" view="Default view">1fd134c6c35512108425dd777d01314a</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-10-18 12:43:02</sys_updated_on>
+            <sys_updated_on>2024-10-21 13:26:20</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>student.last_name</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-10-21 13:26:20</sys_created_on>
+            <sys_id>4f889403c39512108425dd777d0131fe</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1535645_sparta_a_student" sys_domain="global" view="Default view">1fd134c6c35512108425dd777d01314a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-10-21 13:26:20</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>2</position>
+            <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-10-18 12:43:02</sys_created_on>
-            <sys_id>dbd1f80ac35512108425dd777d013141</sys_id>
+            <sys_created_on>2024-10-21 13:26:20</sys_created_on>
+            <sys_id>c3889403c39512108425dd777d0131ff</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1535645_sparta_a_student" sys_domain="global" view="Default view">1fd134c6c35512108425dd777d01314a</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-10-18 12:43:02</sys_updated_on>
+            <sys_updated_on>2024-10-21 13:26:20</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>student</element>
-            <position>3</position>
+            <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-10-18 12:43:02</sys_created_on>
-            <sys_id>53d1f80ac35512108425dd777d013142</sys_id>
+            <sys_created_on>2024-10-21 13:26:20</sys_created_on>
+            <sys_id>4b889403c39512108425dd777d0131ff</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1535645_sparta_a_student" sys_domain="global" view="Default view">1fd134c6c35512108425dd777d01314a</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-10-18 12:43:02</sys_updated_on>
+            <sys_updated_on>2024-10-21 13:26:20</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.end_split</element>
-            <position>4</position>
+            <element>student.email</element>
+            <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-10-18 12:43:02</sys_created_on>
-            <sys_id>d7d1f80ac35512108425dd777d013142</sys_id>
+            <sys_created_on>2024-10-21 13:26:20</sys_created_on>
+            <sys_id>cf889403c39512108425dd777d0131ff</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1535645_sparta_a_student" sys_domain="global" view="Default view">1fd134c6c35512108425dd777d01314a</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-10-18 12:43:02</sys_updated_on>
+            <sys_updated_on>2024-10-21 13:26:20</sys_updated_on>
             <sys_user/>
-            <type>.end_split</type>
+            <type/>
         </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption/>
