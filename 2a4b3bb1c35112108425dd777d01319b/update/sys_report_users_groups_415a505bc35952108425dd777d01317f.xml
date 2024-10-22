@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_users_groups">
+    <sys_report_users_groups action="INSERT_OR_UPDATE">
+        <group_id display_value="Sparta Academy Admins" name="Sparta Academy Admins">c1e87c42c39512108425dd777d0131a7</group_id>
+        <report_id display_value="In-progress and upcoming courses by topic">dca897fec31112108425dd777d01315e</report_id>
+        <sys_class_name>sys_report_users_groups</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-22 08:12:36</sys_created_on>
+        <sys_id>415a505bc35952108425dd777d01317f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>dca897fec31112108425dd777d01315e</sys_name>
+        <sys_package display_value="Sparta Academy" source="x_1535645_sparta_a">2a4b3bb1c35112108425dd777d01319b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Sparta Academy">2a4b3bb1c35112108425dd777d01319b</sys_scope>
+        <sys_update_name>sys_report_users_groups_415a505bc35952108425dd777d01317f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-22 08:12:36</sys_updated_on>
+        <user_id/>
+    </sys_report_users_groups>
+</record_update>
